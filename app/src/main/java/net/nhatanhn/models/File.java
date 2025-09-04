@@ -43,4 +43,9 @@ public class File {
     public void setAccessLevel(int accessLevel) {
         this.accessLevel = accessLevel;
     }
+
+    @Override
+    public String toString() {
+        return String.format("{id: %d, type: %s, name: %s, accessLevel: %d}", id, type, name, accessLevel);
+    }
 }

@@ -53,4 +53,8 @@ public class Account {
         this.isAdmin = isAdmin;
     }
 
+    @Override
+    public String toString() {
+        return String.format("{id: %d, username: %s, accessLevel: %d, isAdmin: %b}", id, username, accessLevel, isAdmin);
+    }
 }
