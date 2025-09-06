@@ -29,7 +29,7 @@ public class AccountController {
         this.accRepo = accRepo;
     }
 
-    public record PostBody(String username, String password, Integer accessLevel, Boolean isAdmin) {
+    public record PostBody(String username, String password, int accessLevel, boolean isAdmin) {
     }
 
     @PostMapping("/login")
